@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 800px;
+    overflow-x: hidden;
+    font-size: 16px;
+    background-color: #1c1a1a;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.header {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url(img/ddd.jpg);
+
+
+}
+
+.header__title {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 3rem;
+
+}
+
+
+
+.header__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+
+
+}
+
+
+.navbar {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #1c1a1a;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    padding-right: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: all .4 ease-out;
+}
+
+
+.navbar-brand:hover {
+    color: #47050e;
+}
+
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.navbar-nav li {
+    display: inline-block;
+
+}
+
+
+.navbar-nav li a {
+    padding-left: 30px;
+
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.7;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all .4 ease-out;
+
+}
+
+
+.navbar-nav li a:hover {
+    opacity: 1;
+    color: red;
+
+}
+
+
+/* Fails */
+.fails{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url(img/ddd.jpg);
+}
+
+
+.fail_nav {
+    margin: 0;
+    padding: 2px;
+    color: #fff;
+
+    position: relative;
+    opacity: 0.7;
+    font-size: 30px;
+    z-index: 1;
+}
+
+
+.fail_nav li a {
+    padding-left: 30px;
+
+    margin-bottom: 5px;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all .4 ease-out;
+    position: relative;
+}
+
+.fail_nav li a:hover {
+    color: red;
+}
+
+
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.works_item {
+    width: 25%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.works_item:hover .works_content {
+    opacity: 1;
+}
+
+
+
+.works_img {
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0)
+}
+
+
+.works_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
+    background-color: rgba(232, 69, 69, 0.7);
+    opacity: 0;
+
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    transition: opacity 0.2s linear;
+
+}
+
+
+.works_title {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.works_text {
+    font-size: 14px;
+    color: white;
+}
+
+
+
+.reviews {
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #47050e;
+}
+
+
+.reviews_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.reviews_photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+
+
+.reviews_img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+
+.reviews_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+
+}
+
+
+.reviews_text {
+    font-family: 'cardo', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+
+.reviews_author {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #fff;
+
+}
+
+
+.footer {
+    padding: 70px 0;
+
+    background-color: #1c1a1a;
+}
+
+
+.footer_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer_block {
+    width: 33.33333%;
+    padding: 0px;
+
+    text-align: center;
+}
+
+
+.footer_title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.footer_address {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+
+.footer_text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.cocial {
+    display: flex;
+    justify-content: center;
+}
+
+.cocial_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+
+    border-radius: 10px;
+
+    transition: background 0.1s linear;
+}
+
+
+.cocial_item:hover {
+    background-color: #fff;
+
+    border: 2px solid #fff;
+}
+
+
+.cocial_item:hover .cocial_icon {
+
+    fill: #000;
+}
+
+
+
+.cocial_icon {
+    display: block;
+    height: 37px;
+
+    fill: #c6cacc;
+
+    transition: fill 0.4s linear;
+}
+
+
+
+.nav_fixe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #47050e;
+    animation-name: show_header;
+    animation-duration: 2s;
+}
+
+
+&keyframes .show_nav {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+
+}
+
+
+
+/* Table */
+.table{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url(img/ddd.jpg);
+}
+
+
+
+.table_tr {
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+
+th, td{
+    display: table-cell;
+    vertical-align: inherit;
+    border: 1px solid #fff;
+    text-shadow: 0.5px 0.5px #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
